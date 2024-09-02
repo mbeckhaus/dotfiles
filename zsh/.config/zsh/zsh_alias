@@ -1,0 +1,21 @@
+open_nvim_in_tmux() {
+    if [[ -n "$TMUX" ]]; then
+        # Get the current directory name
+        local dir_name
+        dir_name=$(basename "$PWD")
+
+        # Rename the tmux window to the current directory name
+        tmux rename-window "$dir_name"
+
+        # Open nvim in the current directory
+        nvim .
+    else
+        nvim .
+    fi
+}
+
+alias calc="bs -l"
+alias ll="ls -la"
+alias vim="nvim"
+alias cd="z" # Zoxide with fzf selection on multiple matches
+alias vh="open_nvim_in_tmux"

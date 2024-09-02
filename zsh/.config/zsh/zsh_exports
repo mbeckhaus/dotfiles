@@ -1,0 +1,13 @@
+#! /bin.sh
+HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTSIZE=100000
+SAVEHIST=100000
+
+export FZF_DEFAULT_COMMAND='fd --type file --hidden --exclude .git --color=always'
+export FZF_DEFAULT_OPTS="--ansi"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_COMPLETION_TRIGGER="**"
+
+export PATH=$PATH:~/Projekte/sonar-scanner/bin/
+export TERM="xterm-256color"
+[[ -n $TMUX ]] && export TERM="screen-256color"

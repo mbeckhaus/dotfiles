@@ -1,0 +1,3 @@
+# Use ctrl-space to accept suggestion and ctrl-e to accept and execute
+bindkey '^ ' autosuggest-accept
+
