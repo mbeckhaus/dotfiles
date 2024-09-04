@@ -18,6 +18,7 @@ local config = {
   -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
   cmd = {
     'java',
+    '--enable-preview',  -- Enable preview features
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -72,6 +73,10 @@ local config = {
           {
             name = "JavaSE-21",
             path = "~/.sdkman/candidates/java/21.0.3-librca"
+          },
+          {
+            name = "JavaSE-22",
+            path = "~/.sdkman/candidates/java/22.0.2-graalce"
           },
         }
       },
