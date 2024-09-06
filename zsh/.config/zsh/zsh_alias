@@ -14,7 +14,7 @@ open_nvim_in_tmux() {
     fi
 }
 
-alias calc="bs -l"
+alias calc="bc -l"
 alias ll="ls -la"
 alias vim="nvim"
 alias cd="z" # Zoxide with fzf selection on multiple matches

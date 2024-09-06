@@ -62,7 +62,7 @@ vim.opt.signcolumn = 'yes'
 
 -- Decrease update time
 vim.opt.updatetime = 50
-vim.opt.timeoutlen = 600
+vim.opt.timeoutlen = 200
 
 -- Set completeopt to have a better completion experience
 vim.opt.completeopt = 'menuone,noselect'
